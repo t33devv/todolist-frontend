@@ -11,7 +11,6 @@ function TodoMain() {
     const [dueDate, setDueDate] = useState('');
 
     const handleClick = (e) => {
-        e.preventDefault();
         const task={title, description, dueDate};
         console.log(task);
         fetch("http://localhost:8080/tasks/add", {
@@ -21,6 +20,7 @@ function TodoMain() {
         }).then(() => {
             console.log("New Task added");
         })
+        window.location.reload();
     }
 
     return (

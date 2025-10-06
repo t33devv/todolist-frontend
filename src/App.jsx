@@ -3,14 +3,15 @@ import './App.css'
 
 import NavBar from './components/NavBar.jsx'
 import TodoList from './components/TodoMain.jsx'
+import TodoItems from './components/TodoItems.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       <NavBar />
       <TodoList />
+      <TodoItems />
     </>
   )
 }
